@@ -23,7 +23,7 @@ public class MainController extends MObject {
         result.set("msg", "/pay");
 
         if (requestData.get("interval") != null) {
-            MBaseUtils.generateStringInKBSize(40, result, (int) requestData.get("interval"));
+            MBaseUtils.generateStringInKBSize(40, result, (long) requestData.get("interval"));
         }
         return result;
     }
